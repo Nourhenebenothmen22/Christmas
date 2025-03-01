@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #ce282c;
+    --primary-color-dark: #ab2123;
+    --text-dark: #0a0a0a;
+    --text-light: #404040;
+    --extra-light: #f5f5f5;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+  
+  .section__header span {
+    color: var(--primary-color);
+  }
+  
+  .section__description {
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: var(--text-light);
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: "Merriweather", serif;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+  }
+  body{
+    font-family: "Merriweather", serif;
+    padding: 0.5rem;
+  }
+  .header{
+    background-image: linear-gradient( rgba(206,40,44,0.8),
+    rgba(206,40,44,0.8)),
+    url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin: auto;
+    max-width: var(--max-width);
+  }
+  .nav_logo{
+    max-width: 100px;
+  }
+  .nav_actions{
+    display: flex;
+    align-items: center;
+  }
+  .nav_actions a{
+  padding: 7px 10px;
+  color: var(--white);
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+  }
+  .nav_actions a:hover{
+    background-color:var(--primary-color-dark);
+  }
+  .header__container{
+    position: relative;
+    padding-block: 0;
+    overflow-x: hidden;
+    isolation: isolate;
+    height: 600px;
+
+  }
+  .header__container img{
+    max-width: 800px;
+    margin-inline:auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .header__content{
+    position: absolute;
+    right: 0;
+    bottom: 4rem;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1;
+  }
+  .header__content h4{
+    font-size:2rem;
+    margin-bottom:1rem;
+    color: var(--white); 
+  }
+  .header__content p{
+    font-size: 0.9rem;
+    color: var(--white);
+  }
+  .header__tag{
+    position: absolute;
+    bottom:10rem;
+    left: 50%;
+    transform: translateX(-150%);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 5rem;
+    cursor: pointer;
+    display: none;
+  }
+  .header__tag span{
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  
+.festive__container {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+
+.festive__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.festive__image .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  max-width: 350px;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(206, 40, 44, 0.8),
+      rgba(206, 40, 44, 0.8)
+    ),
+    url("./assets/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+   z-index: -1;
+}
+
+.festive__image img {
+  padding-top: 5rem;
+  max-width: 600px;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.festive__btn {
+  margin-top: 2rem;
+}
+
+  @media (width > 540px){
+    .nav_logo{
+      max-width: 120px;
+    }
+    .header__tag {
+      display: flex;
+      align-items: center;
+    }
+  
+
+    
+  }
+  @media (width > 768px) {
+    body{
+      padding: 1rem;
+    }
+    .nav_logo{
+      max-width: 150px;
+    }
+    .festive__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      text-align: left;
+    }
+  
+    .festive__image {
+      grid-area: 1/2/2/3;
+    }
+
+    
+  }
+  
