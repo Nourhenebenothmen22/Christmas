@@ -192,7 +192,50 @@
 .festive__btn {
   margin-top: 2rem;
 }
-
+.category {
+  margin-top: 5rem;
+  background-color: var(--extra-light);
+  border-radius: 1rem;
+}
+.category__section{
+  position: relative;
+  text-align: center;
+}
+.category__bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.1;
+  max-width: 500px;
+  transform: translateY(-100%);
+}
+.category__flex{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.category__card{
+  flex: 1 0 125px;
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+.category__card:hover{
+     box-shadow: inset 10px 10px 20px #e5e5e5, inset -10px -10px 20px #ffffff;
+}
+.category__card img{
+  max-width: 50px;
+  margin-inline:auto;
+  margin-bottom: 1rem;
+}
+.category__card h4{
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
   @media (width > 540px){
     .nav_logo{
       max-width: 120px;
@@ -221,7 +264,6 @@
     .festive__image {
       grid-area: 1/2/2/3;
     }
-
     
   }
   
