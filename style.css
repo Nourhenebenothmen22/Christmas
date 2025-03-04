@@ -236,6 +236,53 @@
   color: var(--text-dark);
   font-size: 1.1rem;
 }
+.shopping__container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 5rem 1rem;
+}
+
+.shopping__header {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.shopping__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.shopping__card {
+  padding: 1.5rem 1rem;
+  background-color: var(--extra-light);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shopping__card:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shopping__card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.shopping__card img {
+  max-width: 250px;
+  margin-inline: auto;
+}
+
+.shopping__card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
   @media (width > 540px){
     .nav_logo{
       max-width: 120px;
@@ -243,6 +290,9 @@
     .header__tag {
       display: flex;
       align-items: center;
+    }
+    .shopping__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   
 
@@ -264,6 +314,10 @@
     .festive__image {
       grid-area: 1/2/2/3;
     }
+    .shopping__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
     
   }
   

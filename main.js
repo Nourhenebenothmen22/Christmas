@@ -35,3 +35,7 @@ ScrollReveal().reveal(".festive__content .section__header", {
     ...scrollRevealOption,
     delay: 1000,
   });
+  ScrollReveal().reveal(".shopping__card", {
+    ...scrollRevealOption,
+    interval: 500,
+  });
