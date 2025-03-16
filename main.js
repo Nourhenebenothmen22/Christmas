@@ -39,3 +39,15 @@ ScrollReveal().reveal(".festive__content .section__header", {
     ...scrollRevealOption,
     interval: 500,
   });
+  ScrollReveal().reveal(".explore__image", {
+    ...scrollRevealOption,
+    origin: "left",
+    interval: 500,
+  });
+  ScrollReveal().reveal(".explore__content", {
+    ...scrollRevealOption,
+    origin: "right",
+    delay: 500,
+  });
+
+ 
